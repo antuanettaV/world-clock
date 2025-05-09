@@ -23,14 +23,14 @@ function updateTime() {
   );
 }
 
-  //Tokio
-  let tokioElement = document.querySelector("#tokio");
-  if (tokioElement){
-  let tokioDateElement = tokioElement.querySelector(".date");
-  let tokioTimeElement = tokioElement.querySelector(".time");
-  let tokioTime = moment().tz("Asia/Tokyo");
-  tokioDateElement.innerHTML = tokioTime.format("MMMM Do YYYY");
-  tokioTimeElement.innerHTML = tokioTime.format("h:mm:ss [<small>]A[</small>]");
+  //Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement){
+  let tokyoDateElement = tokyoElement.querySelector(".date");
+  let tokyoTimeElement = tokyoElement.querySelector(".time");
+  let tokyoTime = moment().tz("Asia/Tokyo");
+  tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
+  tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
   }
   //Paris
   let parisElement = document.querySelector("#paris");
